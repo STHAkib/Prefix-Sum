@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, q, num[100], prefix[100];
+
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &num[i]);
+    }
+
+    prefix[0] = num[0];
+
+    for (int i = 1; i < n; i++) {
+        prefix[i] = prefix[i - 1] + num[i];
+    }
+
+    scanf("%d", &q);
+
+    for (int i = 1; i <= q; i++){
+        int L, R;
+        scanf("%d %d", &L, &R);
+
+        if (L == 0)
+            printf("%d\n", prefix[R]);
+        else
+            printf("%d\n", prefix[R] - prefix[L - 1]);
+    }
+
+    return 0;
+}
