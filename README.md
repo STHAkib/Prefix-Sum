@@ -1,4 +1,4 @@
 - Program calculates the sum between any 2 index of an array.
 - First number, which is num[0], is assigned as prefix[0]. As the sum of the first 2 numbers can't be determined at first.
-- q is taken as input for the number of queries. It means calculating the number of different iterations of the sum.
+- q is taken as input for the number of queries. It means calculating the number of different iterations for the sum.
 - L and R are index number ranges. 
