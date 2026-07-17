@@ -2,7 +2,9 @@
 
 int main()
 {
-    int n, q, num[100], prefix[100];
+    int n, q;
+    int num[100], prefix[100];
+    int L, R;
 
     scanf("%d", &n);
 
@@ -19,7 +21,6 @@ int main()
     scanf("%d", &q);
 
     for (int i = 1; i <= q; i++){
-        int L, R;
         scanf("%d %d", &L, &R);
 
         if (L == 0)
